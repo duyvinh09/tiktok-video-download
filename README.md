@@ -119,8 +119,8 @@ http://yourdomain.com/parse_tiktok.php?id=https://vt.tiktok.com/ZS23K2jtk/
 ### Header
 Script này sử dụng các header để giả lập yêu cầu từ trình duyệt thực nhằm tránh các hạn chế:
 
-User-Agent: Giả lập một trình duyệt trên máy tính để vượt qua các hạn chế.
-Accept: Yêu cầu các loại nội dung khác nhau như HTML, XML, hình ảnh, v.v.
+- `User-Agent`: Giả lập một trình duyệt trên máy tính để vượt qua các hạn chế.
+- `Accept`: Yêu cầu các loại nội dung khác nhau như HTML, XML, hình ảnh, v.v.
 ```php
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
