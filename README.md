@@ -36,20 +36,36 @@ http://yourdomain.com/parse_tiktok.php?id=https://vt.tiktok.com/ZS23K2jtk/
 ```
 #### Script sẽ trả về một phản hồi JSON với các thông tin sau:
 
-id: ID của video TikTok
-region: Vùng nơi video được tạo
-title: Tiêu đề/mô tả của video
-cover: URL ảnh bìa của video
-duration: Thời lượng video
-play: URL trực tiếp của video
-wmplay: URL video có watermark
-ratio: Tỷ lệ khung hình của video
-bitrate: Bitrate của video
-create_time: Thời gian tạo video (dạng timestamp)
-author: Thông tin về tác giả, bao gồm ID, tên người dùng, biệt danh, ảnh đại diện, và trạng thái xác thực
-music: Thông tin về âm nhạc trong video, bao gồm tiêu đề, URL phát nhạc, và tên tác giả
-stats: Thống kê về video (ví dụ: số lượt thích, chia sẻ)
-contents: Hashtag và nội dung văn bản liên quan đến video
+- `id`: ID của video TikTok
+- `region`: Vùng nơi video được tạo
+- `title`: Tiêu đề/mô tả của video
+- `cover`: URL ảnh bìa của video
+- `duration`: Thời lượng video
+- `play`: URL trực tiếp của video
+- `wmplay`: URL video có watermark
+- `ratio`: Tỷ lệ khung hình của video
+- `bitrate`: Bitrate của video
+- `create_time`: Thời gian tạo video (dạng timestamp)
+- `author`: Thông tin về tác giả, bao gồm:
+  - `id`: ID tác giả
+  - `uniqueId`: Tên người dùng (username)
+  - `nickname`: Biệt danh của tác giả
+  - `avatarLarger`: URL ảnh đại diện của tác giả
+  - `signature`: Chữ ký (nội dung mô tả) của tác giả
+  - `verified`: Trạng thái xác thực của tác giả
+- `music`: Thông tin về âm nhạc trong video, bao gồm:
+  - `id`: ID của bài nhạc
+  - `title`: Tiêu đề bài nhạc
+  - `playUrl`: URL phát nhạc
+  - `coverLarge`: Ảnh bìa của bài nhạc
+  - `authorName`: Tên tác giả của bài nhạc
+  - `original`: Bài nhạc gốc hay không
+  - `duration`: Thời lượng của bài nhạc
+- `stats`: Thống kê về video, bao gồm:
+  - `diggCount`: Số lượt thích
+  - `shareCount`: Số lượt chia sẻ
+  - `commentCount`: Số lượt bình luận
+- `contents`: Hashtag và nội dung văn bản liên quan đến video
 
 #### Ví dụ phản hồi
 ```json
