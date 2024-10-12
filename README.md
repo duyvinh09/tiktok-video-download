@@ -27,17 +27,17 @@
 #### Ví dụ với URL video đầy đủ:
 
 ```bash
-http://yourdomain.com/tiktok.php?id=https://www.tiktok.com/@username/video/1234567890123456789
+http://yourdomain.com/tiktok.php?url=https://www.tiktok.com/@username/video/1234567890123456789
 ```
 
 #### Ví dụ với URL rút gọn:
 ```bash
-http://yourdomain.com/tiktok.php?id=https://vt.tiktok.com/ZS23K2jtk/
+http://yourdomain.com/tiktok.php?url=https://vt.tiktok.com/ZS23K2jtk/
 ```
 
 #### Ví dụ với URL rút gọn:
 ```bash
-http://yourdomain.com/tiktok.php?id=https://vm.tiktok.com/ZS23K2jtk/
+http://yourdomain.com/tiktok.php?url=https://vm.tiktok.com/ZS23K2jtk/
 ```
 #### Script sẽ trả về một phản hồi JSON với các thông tin sau:
 
