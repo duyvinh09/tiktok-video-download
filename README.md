@@ -35,7 +35,6 @@ http://yourdomain.com/tiktok.php?url=https://www.tiktok.com/@username/video/1234
 http://yourdomain.com/tiktok.php?url=https://vt.tiktok.com/ZS23K2jtk/
 ```
 
-#### Ví dụ với URL rút gọn:
 ```bash
 http://yourdomain.com/tiktok.php?url=https://vm.tiktok.com/ZS23K2jtk/
 ```
